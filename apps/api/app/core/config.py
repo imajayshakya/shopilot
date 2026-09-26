@@ -22,7 +22,7 @@ class Settings(BaseSettings):
     debug: bool = False
 
     # --- Database ---
-    database_url: str = "postgresql+asyncpg://shopilot:shopilot_dev@localhost:5432/shopilot"
+    database_url: str = "sqlite+aiosqlite:///./shopilot.db"
 
     # --- Redis ---
     redis_url: str = "redis://localhost:6379/0"
